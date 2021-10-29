@@ -9,7 +9,8 @@ public class Main {
         boolean hasNextInt = scanner.hasNextInt();
         if (hasNextInt) {
             int number = scanner.nextInt();
-            DiagonalStar.printSquareStar(number);
+            DiagonalStar diagonalStar = new DiagonalStar(number);
+            diagonalStar.printSquareStar(number);
         } else {
             System.out.println("Invalid number");
         }

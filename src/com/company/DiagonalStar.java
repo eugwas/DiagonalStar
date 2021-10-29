@@ -1,7 +1,13 @@
 package com.company;
 
 public class DiagonalStar {
-    public static void printSquareStar(int number) {
+    private int number;
+
+    public DiagonalStar(int number) {
+        this.number = number;
+    }
+
+    public void printSquareStar(int number) {
         if (number < 5) {
             System.out.println("Invalid Value");
         } else {
@@ -11,14 +17,14 @@ public class DiagonalStar {
         }
     }
 
-    public static void printFirstOrLastRow(int number) {
+    public void printFirstOrLastRow(int number) {
         for (int i = 0; i < number; i++) {
             System.out.print("*");
         }
         System.out.println();
     }
 
-    public static void printMiddleRows(int number) {
+    public void printMiddleRows(int number) {
         for (int i = 1; i < number - 1; i++) {
             System.out.print("*");
             for (int j = 1; j < number - 1; j++) {
